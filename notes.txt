@@ -1,0 +1,47 @@
+OOPs:
+CLASS - A named group of properties and function.
+Class starts with caps.
+Creating a data type that is class.
+in a class properties are same but the value of properties of the different. ex: car colors,engine.
+THIS - class is just an template.the refrence variable is just replaced by this word inside the class.
+   Student student1 = new Student(22,"logananth ");
+  Student(int roll,String name){
+            this.roll=roll;
+            this.name=name;
+        }
+here inside the class,this.is replced by student1.roll=roll; And  student1.name=name;
+we can also create the object by passing a another object in the constructor.
+ Student random= new Student(student1);
+ here student1 is an object and random is an refrecne variable refered to another object is passed in random .
+ Student( Student other){
+this.name=other.name;
+this.roll=other.roll;
+        }
+here other.name//(student)=random.name;
+
+ Student one= new Student();
+        one.name="one";
+        Student two=one;
+        two.name="chnged"
+;        System.out.println(two.name);
+
+here two reference variable refer to same object. if you changed a name to a one or two it results in chnging in both.
+in java pass by refrence is not allowed pass by value is allowed.
+example:swapping
+
+FINAL:
+
+if you decalred a primitive data type as final. we cannot change the value.
+but if we decleared a non  primitive data tye as final.we can chnge the value of the final .but we cannot reasign .
+
+ final Student one =new Student(99,"kji");
+        System.out.println(one.name);
+        one.name="kk";
+        one=new Student(99,"koga"); // gives an error
+        System.out.println(one.name);
+
+in java we cannot use the garbage collector java itself destroy the object when its created above its limit.
+  @Override
+        protected void finalize() throws Throwable {
+            System.out.println("desrotyed");
+        }

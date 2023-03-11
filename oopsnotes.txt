@@ -1,0 +1,5 @@
+OOPs:
+CLASS - A named group of properties and function.
+Class starts with caps.
+Creating a data type that is class.
+in a class properties are same but the value of properties of the different. ex: car colors,engine
